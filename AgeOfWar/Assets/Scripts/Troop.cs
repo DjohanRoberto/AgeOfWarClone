@@ -25,7 +25,7 @@ public class Troop : MonoBehaviour
 
         transform.position = Vector3.MoveTowards(transform.position, right , step);
 
-        if (transform.position.x > 28 || transform.position.y < -6) 
+        if (transform.position.x > 18 || transform.position.y < -6) 
         {
             Destroy(this.gameObject);
         }
