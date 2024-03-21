@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyBase : MonoBehaviour
 {
     [SerializeField]
-    float health, maxHealth = 3f;
+    float health, maxHealth = 10f;
 
     [SerializeField]
     FloatingHealthBar healthBar;
@@ -31,10 +31,9 @@ public class EnemyBase : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.name == "Troop(Clone)")
+        if(collision.gameObject == true)
         {
             TakeDamage(1);
-            print("Nigga touching");
         }
     }
 
