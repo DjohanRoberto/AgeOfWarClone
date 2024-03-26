@@ -25,7 +25,7 @@ public class SpawnManager : MonoBehaviour
             if (bufferedSpawn == null)
             {
                 bufferedSpawn = buffer.Dequeue();
-                current = bufferedSpawn.bufferLength;
+                current = bufferedSpawn.getBufferLength();
             }
             timer += Time.deltaTime;
             if (timer >= 1)
@@ -40,7 +40,7 @@ public class SpawnManager : MonoBehaviour
                 if (buffer.Count > 0)
                 {
                     bufferedSpawn = buffer.Dequeue();
-                    current = bufferedSpawn.bufferLength;
+                    current = bufferedSpawn.getBufferLength();
                 }
                 else
                 {

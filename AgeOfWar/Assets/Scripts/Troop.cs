@@ -9,7 +9,7 @@ public class Troop : MonoBehaviour
     private float speed = 5f;
 
     [SerializeField]
-    public int bufferLength = 2;
+    private int bufferLength = 2;
 
     private float Timer = 0f;
 
@@ -59,6 +59,11 @@ public class Troop : MonoBehaviour
                 other.GetComponent<EnemyBase>().TakeDamage(1);
             }
         }
+    }
+
+    public int getBufferLength()
+    {
+        return this.bufferLength;
     }
 
 

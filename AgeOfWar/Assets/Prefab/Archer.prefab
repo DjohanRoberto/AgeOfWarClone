@@ -115,3 +115,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   bufferLength: 2
+  lootDrop: 200

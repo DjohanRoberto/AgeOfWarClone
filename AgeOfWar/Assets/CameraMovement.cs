@@ -14,7 +14,7 @@ public class CameraMovement : MonoBehaviour
         var step = sensitivity * Time.deltaTime;
         Vector3 mousePos = Input.mousePosition;
         Vector3 left = new Vector3(0, transform.position.y, -10);
-        Vector3 right = new Vector3(10, transform.position.y, -10);
+        Vector3 right = new Vector3(30, transform.position.y, -10);
 
         if (mousePos.x < 100)
         {

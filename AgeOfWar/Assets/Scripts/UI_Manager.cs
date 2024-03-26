@@ -21,7 +21,7 @@ public class UI_Manager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        updateGold(Base.getGold());
+        
     }
 
     public void updateGold(int gold)
